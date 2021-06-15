@@ -12,7 +12,7 @@ class BERTJapanese(nn.Module):
 
     Each token is mapped to an output vector from BERT.
     """
-    def __init__(self, model_name_or_path: str, max_seq_length: int = 128, do_lower_case: bool = True):
+    def __init__(self, model_name_or_path: str, max_seq_length: int = 128, do_lower_case: bool = False):
         super(BERTJapanese, self).__init__()
         self.config_keys = ['max_seq_length', 'do_lower_case']
         self.do_lower_case = do_lower_case
